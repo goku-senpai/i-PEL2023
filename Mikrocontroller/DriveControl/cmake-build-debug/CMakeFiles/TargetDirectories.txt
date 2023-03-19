@@ -1,0 +1,8 @@
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/CMakeFiles/UPLOAD.dir
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/CMakeFiles/edit_cache.dir
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/CMakeFiles/rebuild_cache.dir
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/utils/CMakeFiles/edit_cache.dir
+C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/utils/CMakeFiles/rebuild_cache.dir

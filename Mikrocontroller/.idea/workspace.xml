@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="i-PEL_DrCTL" targetName="UPLOAD" />
+      <config projectName="i-PEL_DrCTL" targetName="i-PEL_DrCTL.elf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f84fa20-58e6-4db6-942c-02add57d1c14" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="refs/heads/3-motors" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="wip_ctrl" />
+        <entry key="$PROJECT_DIR$/tool-libs" value="fix_encoder" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1fg2Q6JyawmXhzhxUMIqR1gNPvB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/Palan/Downloads/nucleo_uart_org_inC/nucleo_uart",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "structure.view.defaults.are.configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Inc" />
+      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama" />
+      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Src" />
+      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core" />
+      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Inc" />
+      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.anpama">
+    <configuration name="UPLOAD" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="i-PEL_DrCTL" TARGET_NAME="UPLOAD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="i-PEL_DrCTL" RUN_TARGET_NAME="anpama.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="i-PEL_DrCTL.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="i-PEL_DrCTL" TARGET_NAME="i-PEL_DrCTL.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="i-PEL_DrCTL" RUN_TARGET_NAME="i-PEL_DrCTL.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Mikrocontroller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/labor-anpama/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Visualisierung/pywisp" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Visualisierung/pywisp/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="help" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Mikrocontroller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Palan\Documents\venvs\motorctl\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/anpama/Core/visu" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/anpama/Core/visu/help.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Mikrocontroller" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Palan\Documents\venvs\motorctl\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/anpama/Core/visu" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/anpama/Core/visu/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="anpama" RUN_TARGET_NAME="anpama.elf" EXPLICIT_BUILD_TARGET_NAME="all">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="board/st_nucleo_f7.cfg" reset-type="INIT" download-type="ALWAYS">
+        <debugger kind="GDB" isBundled="true" />
+      </openocd>
+      <method v="2" />
+    </configuration>
+    <configuration name="anpama" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="i-PEL_DrCTL" TARGET_NAME="i-PEL_DrCTL.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="i-PEL_DrCTL" RUN_TARGET_NAME="i-PEL_DrCTL.elf" EXPLICIT_BUILD_TARGET_NAME="all">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="board/st_nucleo_f7.cfg" reset-type="INIT" download-type="ALWAYS">
+        <debugger kind="GDB" isBundled="true" />
+      </openocd>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.i-PEL_DrCTL.elf" />
+      <item itemvalue="CMake Application.UPLOAD" />
+      <item itemvalue="OpenOCD Download &amp; Run.anpama" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.help" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f84fa20-58e6-4db6-942c-02add57d1c14" name="Default Changelist" comment="" />
+      <created>1596625395717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596625395717</updated>
+      <workItem from="1596625396974" duration="1678000" />
+      <workItem from="1596632572833" duration="13480000" />
+      <workItem from="1597143286234" duration="16972000" />
+      <workItem from="1597316791220" duration="599000" />
+      <workItem from="1597646318901" duration="4394000" />
+      <workItem from="1597744097123" duration="1105000" />
+      <workItem from="1597747262161" duration="11933000" />
+      <workItem from="1597923217988" duration="3362000" />
+      <workItem from="1597930435221" duration="2034000" />
+      <workItem from="1597932742836" duration="8113000" />
+      <workItem from="1600242923638" duration="6421000" />
+      <workItem from="1600962934334" duration="2986000" />
+      <workItem from="1675067794069" duration="524000" />
+      <workItem from="1675784205716" duration="7211000" />
+      <workItem from="1678146248804" duration="625000" />
+      <workItem from="1678915638705" duration="48487000" />
+      <workItem from="1679155475652" duration="721000" />
+      <workItem from="1679157686239" duration="2921000" />
+      <workItem from="1679163500096" duration="1290000" />
+      <workItem from="1679165774396" duration="19226000" />
+      <workItem from="1679257806120" duration="7603000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/3-motors" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/../.." />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/../.." />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="SHOW_ROOT_NAMES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/3-motors" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/anpama/Core/Src/main.cpp</url>
+          <line>106</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/anpama/Core/Src/main.cpp</url>
+          <line>128</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/anpama/Core/Src/main.cpp</url>
+          <line>110</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

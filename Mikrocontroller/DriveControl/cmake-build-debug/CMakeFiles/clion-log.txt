@@ -1,0 +1,7 @@
+"C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama -B C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\cmake-build-debug
+'usingnativecompiler'
+'usinghostcompiler'
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR unit_test_framework) 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="anpama" targetName="anpama.elf" />
+      <config projectName="anpama" targetName="UPLOAD" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="053450d3-a7ad-4e0b-9142-3bf73b5c910d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../../.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1fdRg4e2NkNJKEZ10JwqxPLip3K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../mobrost/Software" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="UPLOAD" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="anpama" TARGET_NAME="UPLOAD" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="anpama.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="anpama" TARGET_NAME="anpama.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="anpama" RUN_TARGET_NAME="anpama.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="anpama" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/labor-anpama/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Visualisierung/pywisp" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Visualisierung/pywisp/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="anpama" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/labor-anpama/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Visualisierung/pywisp" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Visualisierung/pywisp/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="anpama" RUN_TARGET_NAME="anpama.elf" EXPLICIT_BUILD_TARGET_NAME="all">
+      <openocd gdb-port="3333" telnet-port="4444" reset-type="INIT" download-type="ALWAYS" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="anpama.elf" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="anpama" TARGET_NAME="anpama.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="anpama" RUN_TARGET_NAME="anpama.elf">
+      <openocd gdb-port="3333" telnet-port="4444" board-config="board/st_nucleo_f7.cfg" reset-type="INIT" download-type="ALWAYS" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.anpama.elf" />
+      <item itemvalue="CMake Application.UPLOAD" />
+      <item itemvalue="OpenOCD Download &amp; Run.anpama.elf" />
+      <item itemvalue="Python.main" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="053450d3-a7ad-4e0b-9142-3bf73b5c910d" name="Default Changelist" comment="" />
+      <created>1596546091104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596546091104</updated>
+      <workItem from="1596546092285" duration="200000" />
+      <workItem from="1596546330577" duration="7183000" />
+      <workItem from="1596609439638" duration="2382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="259" y="85" width="1081" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596546984104">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="259" y="85" width="1081" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596546984104" />
+    <state width="476" height="506" key="DebuggerActiveHint" timestamp="1596547301635">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="476" height="506" key="DebuggerActiveHint/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596547301635" />
+    <state x="583" y="177" width="432" height="490" key="FileChooserDialogImpl" timestamp="1596611360474">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="583" y="177" width="432" height="490" key="FileChooserDialogImpl/0.0.1600.860/0.0.1600.860@0.0.1600.860" timestamp="1596611360474" />
+    <state x="583" y="185" key="FileChooserDialogImpl/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596549423470" />
+    <state width="1554" height="351" key="GridCell.Tab.0.bottom" timestamp="1596552928252">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.0.bottom/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928252" />
+    <state width="1554" height="351" key="GridCell.Tab.0.center" timestamp="1596552928252">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.0.center/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928252" />
+    <state width="1554" height="351" key="GridCell.Tab.0.left" timestamp="1596552928252">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.0.left/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928252" />
+    <state width="1554" height="351" key="GridCell.Tab.0.right" timestamp="1596552928252">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.0.right/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928252" />
+    <state width="1554" height="351" key="GridCell.Tab.1.bottom" timestamp="1596552928253">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.1.bottom/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928253" />
+    <state width="1554" height="351" key="GridCell.Tab.1.center" timestamp="1596552928252">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.1.center/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928252" />
+    <state width="1554" height="351" key="GridCell.Tab.1.left" timestamp="1596552928252">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.1.left/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928252" />
+    <state width="1554" height="351" key="GridCell.Tab.1.right" timestamp="1596552928252">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.1.right/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928252" />
+    <state width="1554" height="351" key="GridCell.Tab.2.bottom" timestamp="1596552928253">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.2.bottom/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928253" />
+    <state width="1554" height="351" key="GridCell.Tab.2.center" timestamp="1596552928253">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.2.center/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928253" />
+    <state width="1554" height="351" key="GridCell.Tab.2.left" timestamp="1596552928253">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.2.left/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928253" />
+    <state width="1554" height="351" key="GridCell.Tab.2.right" timestamp="1596552928253">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="351" key="GridCell.Tab.2.right/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596552928253" />
+    <state x="297" y="62" key="SettingsEditor" timestamp="1596549267761">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="297" y="62" key="SettingsEditor/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596549267761" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1596549630971">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.900/1600.66.1440.900@0.0.1600.900" timestamp="1596549630971" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/main.cpp</url>
+          <line>64</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/main.cpp</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Inc/ExperimentModules.h</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Inc/ExperimentModules.h</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
