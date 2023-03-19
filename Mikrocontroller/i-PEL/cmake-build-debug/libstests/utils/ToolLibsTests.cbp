@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ToolLibsTests"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\tool-libs\;CMake Files\..\tool-libs\utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/utils"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/utils/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/cmake-build-debug/libstests/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/CMakeMacro.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/../tool-libs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\tool-libs\"/>
+		</Unit>
+		<Unit filename="C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller/anpama/../tool-libs/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\tool-libs\utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
