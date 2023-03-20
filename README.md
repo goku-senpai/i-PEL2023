@@ -1,6 +1,6 @@
 The NUCLEO-144 STM32F767ZI board also has two USB connectors: one is the USB ST-LINK/V2-1 connector (CN1), and the other is the USB device connector (CN12).
 
-For UART communication over the USB device connector, you can use the same pins as for the NUCLEO-F767ZI board:
+For UART communication over the USB device connector on the NUCLEO-F767ZI board the following Pins can be used:
 
     PA11 (USB_OTG_FS_DM)
     PA12 (USB_OTG_FS_DP)
