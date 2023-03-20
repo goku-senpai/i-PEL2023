@@ -1,2 +1,2 @@
-cmake-build-debug/*
-.idea/*
+Mikrocontroller/DriveControl/cmake-build-debug/*
+Mikrocontroller/DriveControl/.idea/*

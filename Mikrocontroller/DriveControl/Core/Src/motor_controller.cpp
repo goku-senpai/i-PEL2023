@@ -19,11 +19,6 @@ void MotorController::set_target(float target) {
     pid_controller_.set_target(target);
 }
 
-/*
-void MotorController::set_mode(uint8_t mode) {
-    pid_controller_.set_mode(mode);
-}
-*/
 
 float MotorController::get_error() {
     return pid_controller_.get_target() - current_position_;
@@ -69,7 +64,6 @@ void MotorController::update(float sample_time) {
     } else {
         current_position_--;
     }
-
     // Update previous encoder value for speed calculation
     prev_encoder_value_ = encoder_value;
 }

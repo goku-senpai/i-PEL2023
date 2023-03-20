@@ -20,6 +20,9 @@ public:
     float get_error();
     void update(float sample_time);
     void set_output(float output);
+    PIDController pid_controller_;
+
+
 
 private:
     TIM_HandleTypeDef* htim_pwm_;
@@ -29,7 +32,6 @@ private:
     uint32_t pin_encoder_a_;
     uint32_t pin_encoder_b_;
     uint32_t pin_direction_;
-    PIDController pid_controller_;
 
     bool is_position_controller_;
     uint32_t current_position_;

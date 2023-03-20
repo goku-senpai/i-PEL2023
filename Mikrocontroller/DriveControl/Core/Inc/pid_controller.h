@@ -24,6 +24,7 @@ public:
 
     void update_position_control(float input, float sample_time);
     void update_speed_control(float input, float sample_time);
+    void set_gains(float kp, float ki, float kd);
 
 
 private:

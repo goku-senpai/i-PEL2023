@@ -24,6 +24,7 @@ Timer_initialize timINIT;
 // USB Serial connection to the PC
 Serial pc(USART2, GPIOA, GPIO_PIN_2, GPIO_PIN_3);
 
+float error;
 
 void HAL_PCD_MspInit(PCD_HandleTypeDef *hpcd)
 {
@@ -82,7 +83,6 @@ void HAL_PCD_MspInit(PCD_HandleTypeDef *hpcd)
 }
 
 
-
 // Motor controller instance
 MotorController MotorController(&timINIT.htim3, TIM_CHANNEL_1, GPIOB,
                                 &timINIT.htim4, GPIO_PIN_6, GPIO_PIN_7,
@@ -98,33 +98,30 @@ Encoder encoder(TIM4, ENCODER_M1_A_PORT, ENCODER_M1_A_PIN, ENCODER_M1_A_ALTERNAT
 PIDController pid_controller(POS_KP, POS_KI, POS_KD, MAX_OUT, DEFAULT_MAX_INTEGRAL, DEFAULT_TARGET_START);
 
 
+// Pseudofunctios
 static void MX_USART6_UART_Init(void);
-
-
 void delay(uint32_t ms);
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart);
 
+
+// constants for PID_controller and buffer
+float dKp = 0.0f, dKi = 0.0f, dKd = 0.0f, dSetpoint = 0.0f, err=0.0f;
+bool bFreewheel = true;
 
 
 void parseMessage(const uint8_t* data, bool& bFreewheel, float& dKp, float& dKi, float& dKd, float& dSetpoint) {
     const char* c_data = reinterpret_cast<const char*>(data);
-    LedRed->toggle();
-
     char* endptr;
     bFreewheel = strtol(c_data, &endptr, 10) != 0;
     dKp = strtof(endptr, &endptr);
     dKi = strtof(endptr, &endptr);
     dKd = strtof(endptr, &endptr);
     dSetpoint = strtof(endptr, nullptr);
-    LedRed->toggle();
-
 }
+
 
 void setup() {
     HAL_Init();
-
-    // PC Serial Configuration
-    //pc.init(115200);
-
     __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
     __HAL_RCC_GPIOC_CLK_ENABLE();
@@ -132,20 +129,17 @@ void setup() {
     __HAL_RCC_GPIOE_CLK_ENABLE();
     __HAL_RCC_GPIOF_CLK_ENABLE();
     __HAL_RCC_GPIOG_CLK_ENABLE();
-
     __HAL_RCC_TIM1_CLK_ENABLE();
     __HAL_RCC_TIM2_CLK_ENABLE();
     __HAL_RCC_TIM3_CLK_ENABLE();
     __HAL_RCC_TIM4_CLK_ENABLE();
-
     __HAL_RCC_DMA2_CLK_ENABLE();
-
     __HAL_RCC_USART6_CLK_ENABLE();
-
 
     LedRed = new DIO(LED_RED_PIN, LED_RED_PORT);
     LedGreen = new DIO(LED_GREEN_PIN, LED_GREEN_PORT);
     LedBlue = new DIO(LED_BLUE_PIN, LED_BLUE_PORT);
+    encoder.reset_count();
 
 }
 
@@ -153,57 +147,94 @@ void checkmsg(const uint8_t* data) {
     const char *c_data = (const char*)data;
 
     // Parse the data into variables
-    bool bFreewheel = true;
-    float dKp = 0.0f, dKi = 0.0f, dKd = 0.0f, dSetpoint = 0.0f;
-
     parseMessage(data,bFreewheel,dKp,dKi,dKd,dSetpoint);
     printf("Received data: %d,%f,%f,%f,%f\n", bFreewheel, dKp, dKi,dKd, dSetpoint);
 
 }
 
 
+//size of buffer
+int iRxBuffSize = 1000;
+int iTxBuffSize = 1000;
+
 int main() {
-    PCD_HandleTypeDef hpcd_USB_OTG_FS;
-    hpcd_USB_OTG_FS.Instance = USB_OTG_FS;
-    HAL_PCD_Init(&hpcd_USB_OTG_FS);
-    //size of buffer
-    uint8_t rx_buffer[100];
+    uint8_t rx_buffer[iRxBuffSize];
+    uint8_t tx_buffer[iTxBuffSize];
     //    LedBlue->toggle();
     setup();
-
-    printf("Starting motor controller...\n");
-
-    //uint8_t test_msg[]="11.32";
-    uint8_t uTestMessage[]="1 1.32 10.01 100.01 10.001\n";
-    uint8_t uBuffer[]="\n";
-
-
     while (1) {
-
-        checkmsg(uTestMessage);
-        /*
+        /**
          * Read Data from USB (GUI)
-         *  HAL_UART_Receive(&huart6, rx_buffer,20, 300);
-         *
-         */
-
+         **/
         HAL_UART_Receive(&huart6, rx_buffer,20, 300);
+
+        /**
+         * Buffer it and split it into b,f,f,f,f
+         **/
         //Buffer: bool ctl_mode, float Kp, float, Ki, float Kd, float Setpoint;
         checkmsg(rx_buffer);
+        LedBlue->toggle();
 
-        LedGreen->toggle();
-        delay(250);
+        // Set new PID gains with gains from recieved
+        MotorController.pid_controller_.set_gains(dKp, dKi, dKd);
+        //check if v ctl or pos ctl
+        if (bFreewheel=1){
+            pid_controller.set_mode(PIDController::SPEED_CONTROL);
 
-        /*if (bFreewheel=True)
+            // Set new setpoint
+            MotorController.set_target(dSetpoint);
+
+            // Format the data as a string and add it to the buffer
+            int num_chars = snprintf((char*)tx_buffer, iRxBuffSize, "%d,%.2f,%.2f,%.2f,%.2f", bFreewheel, dKp, dKi, dKd, dSetpoint);
+
+            // Check if the number of characters added to the buffer is within its size limit
+            if (num_chars >= iRxBuffSize) {
+                // TODO:Handle the case where the buffer is not big enough
+            }
+        }
+        else if(bFreewheel=0) {
+            pid_controller.set_mode(PIDController::POSITION_CONTROL);
+
+            // Set new setpoint
+            MotorController.set_target(dSetpoint);
+
+            // Format the data as a string and add it to the buffer
+            int num_chars = snprintf((char*)rx_buffer, iRxBuffSize, "%d,%.2f,%.2f,%.2f,%.2f", bFreewheel, dKp, dKi, dKd, dSetpoint);
+
+            // Check if the number of characters added to the buffer is within its size limit
+            if (num_chars >= iRxBuffSize) {
+                // TODO:Handle the case where the buffer is not big enough
+            }
+        }
+        else LedRed->toggle();
+
+//////////////////////////////////////////////////////////////////////////////
+/**
+  *      FAIL FROM HERE
+**/       // Update motor controller
+///        MotorController.update(0.01);                                  ///
+        //print out something on IO stream to check and find out where the Problem is with
+        //          th update fun.
+        delay(50);;
+
+        /**
+         * Send Data to USB (GUI)
          *
-        /*
-
-         * Todo: Implement Motor controller
-            if(Freewheel):motor_controller.set_speed(speed);
-
+         * ToDo:
+         *  Data to send: time, error, pos or speed (current)
+         *  add time
+         *  add posi now or speed now
+         **/
+        error=MotorController.get_error();
+        uint8_t sen_chars = snprintf((char*)tx_buffer, iTxBuffSize, "%.d,%.2f", bFreewheel,error);
+        if(sen_chars < 0){
+            LedRed->toggle();
             break;
-         *
-         */
+        } else {
+            HAL_UART_Transmit_IT(&huart6, tx_buffer, sizeof(sen_chars));
+        }
+             //err=MotorController.get_error(); //= error of PID
+        LedBlue->toggle();
 
     }
 }

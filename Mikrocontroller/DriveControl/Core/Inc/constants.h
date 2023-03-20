@@ -11,6 +11,27 @@
 #define MOTOR_MAX_PWM_DUTY 1000
 
 
+/**
+ * @defgroup TRANSPORT Transport
+ * Transport defines
+ *
+ * @{
+ */
+/** pin of USART receive functionality */
+#define TRANSPORT_RX_PIN                    GPIO_PIN_9
+/** port of USART receive functionality */
+#define TRANSPORT_RX_PORT                   GPIOG
+/** alternate pin function for USART receive functionality */
+#define TRANSPORT_RX_ALTERNATE              GPIO_AF8_USART6
+
+/** pin of USART transmit functionality */
+#define TRANSPORT_TX_PIN                    GPIO_PIN_14
+/** port of USART transmit functionality */
+#define TRANSPORT_TX_PORT                   GPIOG
+/** alternate pin function for USART transmit functionality */
+#define TRANSPORT_TX_ALTERNATE              GPIO_AF8_USART6
+
+
 #define MOTOR_ENA1_PIN                  GPIO_PIN_13
 #define MOTOR_ENA1_PORT                 GPIOF
 
@@ -47,10 +68,11 @@
 /** @} */
 
 
+/** sampling time of roboto controller in ms */
+#define EXP_DT                              (100) //TODO: check diffs TO 50 trim params!!!!
 
 
 /** @} */
-
 /**
  * @defgroup ENCODER Encoder
  * Encoder defines
@@ -116,8 +138,7 @@
 #define EXP_TIMER                           TIM7
 /** timer interrupt for car */
 #define EXP_TIMER_IRQ                       TIM7_IRQn
-/** sampling time of roboto controller in ms */
-#define EXP_DT                              (100) //TODO: check diffs TO 50 trim params!!!!
+
 /** keepalive time of heartbeat in ms */
 #define EXP_KEEPALIVE                       (500)
 /** Experiment timer priority*/
@@ -135,25 +156,9 @@
 #define TICK_MAX_CLIENTS                1
 /** @} */
 
-/**
- * @defgroup TRANSPORT Transport
- * Transport defines
- *
- * @{
- */
-/** pin of USART receive functionality */
-#define TRANSPORT_RX_PIN                    GPIO_PIN_9
-/** port of USART receive functionality */
-#define TRANSPORT_RX_PORT                   GPIOG
-/** alternate pin function for USART receive functionality */
-#define TRANSPORT_RX_ALTERNATE              GPIO_AF8_USART6
 
-/** pin of USART transmit functionality */
-#define TRANSPORT_TX_PIN                    GPIO_PIN_14
-/** port of USART transmit functionality */
-#define TRANSPORT_TX_PORT                   GPIOG
-/** alternate pin function for USART transmit functionality */
-#define TRANSPORT_TX_ALTERNATE              GPIO_AF8_USART6
+
+
 
 /** USART peripheral */
 #define TRANSPORT_UART                      USART6

@@ -13,6 +13,12 @@ float PIDController::get_target() {
     return this->target_;
 }
 
+void PIDController::set_gains(float kp, float ki, float kd) {
+    this->kp_ = kp;
+    this->ki_ = ki;
+    this->kd_ = kd;
+}
+
 float PIDController::compute(float input) {
     float error = this->target_ - input;
     float derivative = error - this->last_error_;
