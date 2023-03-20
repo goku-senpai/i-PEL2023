@@ -7,6 +7,7 @@
 #include "constants.h"
 #include "stm32f767xx.h"
 #include "stm32f7xx_hal.h"
+#include "stm32f7xx_hal_pcd.h"
 
 
 ////instance of LEDS
@@ -23,15 +24,66 @@ Timer_initialize timINIT;
 // USB Serial connection to the PC
 Serial pc(USART2, GPIOA, GPIO_PIN_2, GPIO_PIN_3);
 
+
+void HAL_PCD_MspInit(PCD_HandleTypeDef *hpcd)
+{
+    GPIO_InitTypeDef GPIO_InitStruct;
+
+    if(hpcd->Instance == USB_OTG_FS) {
+        /* Configure USB FS GPIOs */
+        __HAL_RCC_GPIOA_CLK_ENABLE();
+
+        /* Configure DM and DP pins */
+        GPIO_InitStruct.Pin = GPIO_PIN_11 | GPIO_PIN_12;
+        GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+        GPIO_InitStruct.Pull = GPIO_NOPULL;
+        GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+        GPIO_InitStruct.Alternate = GPIO_AF10_OTG_FS;
+        HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+        /* Enable USB FS clock */
+        __HAL_RCC_USB_OTG_FS_CLK_ENABLE();
+
+        /* Set USB FS interrupt priority */
+        HAL_NVIC_SetPriority(OTG_FS_IRQn, 6, 0);
+
+        /* Enable USB FS interrupt */
+        HAL_NVIC_EnableIRQ(OTG_FS_IRQn);
+    }
+    else if(hpcd->Instance == USB_OTG_HS) {
+        /* Configure USB HS GPIOs */
+        __HAL_RCC_GPIOB_CLK_ENABLE();
+        __HAL_RCC_GPIOC_CLK_ENABLE();
+
+        /* Configure DM and DP pins */
+        GPIO_InitStruct.Pin = GPIO_PIN_12;
+        GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+        GPIO_InitStruct.Pull = GPIO_NOPULL;
+        GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+        GPIO_InitStruct.Alternate = GPIO_AF12_OTG_HS_FS;
+        HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+        GPIO_InitStruct.Pin = GPIO_PIN_2;
+        GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+        GPIO_InitStruct.Pull = GPIO_NOPULL;
+        GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+        GPIO_InitStruct.Alternate = GPIO_AF12_OTG_HS_FS;
+        HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+        /* Enable USB HS clock */
+        __HAL_RCC_USB_OTG_HS_CLK_ENABLE();
+
+        /* Set USB HS interrupt priority */
+        HAL_NVIC_SetPriority(OTG_HS_IRQn, 6, 0);
+
+        /* Enable USB HS interrupt */
+        HAL_NVIC_EnableIRQ(OTG_HS_IRQn);
+    }
+}
+
+
+
 // Motor controller instance
-/*
- * MotorController::MotorController(&timINIT.htim3, TIM_CHANNEL_1, GPIOB,
-                                 &timINIT.htim4, GPIO_PIN_6, GPIO_PIN_7,
-                                 POS_KP, POS_KI, POS_KD, MAX_OUT, DEFAULT_MAX_INTEGRAL
-                                 DEFAULT_TARGET_START, GPIO_PIN_8 bool is_position_controller)
- */
-
-
 MotorController MotorController(&timINIT.htim3, TIM_CHANNEL_1, GPIOB,
                                 &timINIT.htim4, GPIO_PIN_6, GPIO_PIN_7,
                                 POS_KP, POS_KI, POS_KD, MAX_OUT, DEFAULT_MAX_INTEGRAL,
@@ -68,8 +120,6 @@ void parseMessage(const uint8_t* data, bool& bFreewheel, float& dKp, float& dKi,
 }
 
 void setup() {
-    //timer_initialize.init();
-
     HAL_Init();
 
     // PC Serial Configuration
@@ -113,6 +163,9 @@ void checkmsg(const uint8_t* data) {
 
 
 int main() {
+    PCD_HandleTypeDef hpcd_USB_OTG_FS;
+    hpcd_USB_OTG_FS.Instance = USB_OTG_FS;
+    HAL_PCD_Init(&hpcd_USB_OTG_FS);
     //size of buffer
     uint8_t rx_buffer[100];
     //    LedBlue->toggle();
@@ -135,12 +188,16 @@ int main() {
          */
 
         HAL_UART_Receive(&huart6, rx_buffer,20, 300);
+        //Buffer: bool ctl_mode, float Kp, float, Ki, float Kd, float Setpoint;
         checkmsg(rx_buffer);
 
         LedGreen->toggle();
         delay(250);
 
+        /*if (bFreewheel=True)
+         *
         /*
+
          * Todo: Implement Motor controller
             if(Freewheel):motor_controller.set_speed(speed);
 

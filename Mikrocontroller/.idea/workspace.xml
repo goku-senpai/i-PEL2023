@@ -23,22 +23,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f84fa20-58e6-4db6-942c-02add57d1c14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DriveControl/Core/visu/logo_ipel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DriveControl/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pcd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DriveControl/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pcd_ex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DriveControl/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DriveControl/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DriveControl/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DriveControl/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mikrocontroller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mikrocontroller.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/Core/Inc/constants.h" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Inc/constants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/Core/Inc/motor_controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Inc/motor_controller.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/Core/Src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/Core/Src/motor_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Src/motor_controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/Core/Src/pid_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Src/pid_controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/encoder.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/encoder.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/motor_controller.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/motor_controller.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/pid_controller.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/pid_controller.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.bin" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.elf" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.hex" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.map" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/Core/visu/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/visu/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/cache-v2-f4d7e488163fd82155fc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7d1698329f3528a2b46a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-dbce34325c3ccfd27e55.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/directory-libstests-Debug-6a6402648e60fcbd3788.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/directory-libstests.utils-Debug-7621dc830d83bed3d90d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-20T00-24-27-0306.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/target-UPLOAD-Debug-ce904e5b3fbfb5d9ca73.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/target-i-PEL_DrCTL.elf-Debug-d0eb82c782a12261e94e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-c37e433739a3580caafb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CMakeASMCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/backup.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/encoder.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/motor_controller.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/pid_controller.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/stm32f7xx_hal_msp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/stm32f7xx_it.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/syscalls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/sysmem.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/system_stm32f7xx.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/timer_initialize.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/startup/startup_stm32f767xx.s.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/anpama.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/anpama.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/anpama.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/anpama.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/anpama.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/utils/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/utils/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/utils/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/utils/ToolLibsTests.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/libstests/utils/cmake_install.cmake" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,21 +176,24 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/Palan/Documents/CODE/anpama/labor-ipel/Software/Mikrocontroller_org/anpama/Core/Inc/define.h",
+    "last_opened_file_path": "C:/Users/Palan/Documents/CODE/i-PEL2023/Mikrocontroller/DriveControl/Core/logo",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.build",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "structure.view.defaults.are.configured": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Palan\Documents\CODE\i-PEL2023\Mikrocontroller\DriveControl\Core\logo" />
       <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Inc" />
       <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama" />
       <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Src" />
       <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core" />
-      <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Palan\Documents\CODE\i-PEL2023\Mikrocontroller\DriveControl\Core\visu" />
+      <recent name="C:\Users\Palan\Documents\CODE\i-PEL2023\Mikrocontroller\DriveControl\Core" />
+      <recent name="C:\Users\Palan\Documents\CODE\i-PEL2023\Mikrocontroller\DriveControl\Core\Inc" />
       <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Inc" />
       <recent name="C:\Users\Palan\Documents\CODE\anpama\labor-ipel\Software\Mikrocontroller\anpama\Core\Src" />
     </key>
@@ -119,12 +204,12 @@
     </option>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.DrCtl">
-    <configuration name="UPLOAD" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="i-PEL_DrCTL" TARGET_NAME="UPLOAD" CONFIG_NAME="Debug">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="UPLOAD" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="i-PEL_DrCTL" TARGET_NAME="UPLOAD" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -163,11 +248,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Palan\Documents\venvs\motorctl\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/anpama/Core/visu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DriveControl/Core/visu" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/anpama/Core/visu/help.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DriveControl/Core/visu/help.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,11 +269,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Palan\Documents\venvs\motorctl\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/anpama/Core/visu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DriveControl/Core/visu" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/anpama/Core/visu/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DriveControl/Core/visu/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,7 +332,8 @@
       <workItem from="1679165774396" duration="19226000" />
       <workItem from="1679257806120" duration="7603000" />
       <workItem from="1679268011692" duration="3678000" />
-      <workItem from="1679271848938" duration="2189000" />
+      <workItem from="1679271848938" duration="2638000" />
+      <workItem from="1679301731300" duration="12274000" />
     </task>
     <task id="LOCAL-00001" summary="rework of tool-lib inplementation (git-problems)">
       <created>1679268171440</created>

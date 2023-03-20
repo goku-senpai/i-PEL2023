@@ -39,7 +39,7 @@ PROJECT(i-PEL_DrCTL C CXX ASM)
 
 file(GLOB_RECURSE SOURCES "Drivers/*.*" "Core/*.*")
 
-add_executable(${PROJECT_NAME}.elf ${SOURCES} startup/startup_stm32f767xx.s Core/Src/motor_controller.cpp Core/Src/encoder.cpp Core/Src/pid_controller.cpp Core/Src/timer_initialize.cpp Core/Inc/timer_initialize.h Core/Src/backup.cpp Core/Inc/main.h Core/Inc/gpio.h)
+add_executable(${PROJECT_NAME}.elf ${SOURCES} startup/startup_stm32f767xx.s Core/Src/motor_controller.cpp Core/Src/encoder.cpp Core/Src/pid_controller.cpp Core/Src/timer_initialize.cpp Core/Inc/timer_initialize.h Core/Src/backup.cpp Core/Inc/main.h Core/Inc/gpio.h Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pcd.h Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pcd_ex.h Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c)
 
 target_include_directories(${PROJECT_NAME}.elf PUBLIC
         Core/Inc
