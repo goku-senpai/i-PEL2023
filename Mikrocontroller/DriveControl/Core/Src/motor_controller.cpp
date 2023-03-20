@@ -29,12 +29,12 @@ float MotorController::get_error() {
     return pid_controller_.get_target() - current_position_;
 }
 
-
 void MotorController::update(float sample_time) {
     // Read encoder values
     uint32_t encoder_value = htim_encoder_->Instance->CNT;
     bool encoder_a = HAL_GPIO_ReadPin(ENCODER_M1_A_PORT, pin_encoder_a_);
     bool encoder_b = HAL_GPIO_ReadPin(ENCODER_M1_B_PORT, pin_encoder_a_);
+
 
     if (is_position_controller_) {
         // Update PID controller with current position and time delta
@@ -70,10 +70,8 @@ void MotorController::update(float sample_time) {
         current_position_--;
     }
 
-
-// Update previous encoder value for speed calculation
+    // Update previous encoder value for speed calculation
     prev_encoder_value_ = encoder_value;
-
 }
 
 

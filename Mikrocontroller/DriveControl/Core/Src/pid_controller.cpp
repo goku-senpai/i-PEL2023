@@ -63,6 +63,6 @@ float PIDController::get_output() {
     return current_output_;
 }
 
-void PIDController::set_mode(bool mode) {
+void PIDController::set_mode(Mode mode) {
     this->mode_ = (Mode)mode;
 }

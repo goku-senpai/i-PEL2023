@@ -32,9 +32,9 @@ private:
     PIDController pid_controller_;
 
     bool is_position_controller_;
-
-    float current_position_;
+    uint32_t current_position_;
     float current_output_;
+    uint32_t prev_encoder_value_;
 };
 
 #endif

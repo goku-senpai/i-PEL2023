@@ -23,16 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f84fa20-58e6-4db6-942c-02add57d1c14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DriveControl/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/Core/Inc/Trajectory.h" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Inc/Trajectory.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/Core/Inc/constants.h" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Inc/constants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/Core/Inc/define.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/Core/Inc/motor_controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Inc/motor_controller.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DriveControl/Core/Inc/pid_controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Inc/pid_controller.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/Core/Src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/Core/Src/motor_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Src/motor_controller.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/Core/Src/pid_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/Core/Src/pid_controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/encoder.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/encoder.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/motor_controller.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/motor_controller.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/pid_controller.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/CMakeFiles/i-PEL_DrCTL.elf.dir/Core/Src/pid_controller.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.bin" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.elf" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.hex" beforeDir="false" afterPath="$PROJECT_DIR$/DriveControl/cmake-build-debug/i-PEL_DrCTL.hex" afterDir="false" />
@@ -46,6 +48,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -115,7 +118,7 @@
       <command value="LedBlue-&gt;" />
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.DrCtl">
     <configuration name="UPLOAD" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="i-PEL_DrCTL" TARGET_NAME="UPLOAD" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -244,7 +247,7 @@
       <workItem from="1679165774396" duration="19226000" />
       <workItem from="1679257806120" duration="7603000" />
       <workItem from="1679268011692" duration="3678000" />
-      <workItem from="1679271848938" duration="732000" />
+      <workItem from="1679271848938" duration="2189000" />
     </task>
     <task id="LOCAL-00001" summary="rework of tool-lib inplementation (git-problems)">
       <created>1679268171440</created>

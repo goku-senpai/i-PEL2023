@@ -24,9 +24,19 @@ Timer_initialize timINIT;
 Serial pc(USART2, GPIOA, GPIO_PIN_2, GPIO_PIN_3);
 
 // Motor controller instance
-MotorController motorController(&timINIT.htim3, TIM_CHANNEL_1, GPIOB, &timINIT.htim4, GPIO_PIN_6, GPIO_PIN_7,
+/*
+ * MotorController::MotorController(&timINIT.htim3, TIM_CHANNEL_1, GPIOB,
+                                 &timINIT.htim4, GPIO_PIN_6, GPIO_PIN_7,
+                                 POS_KP, POS_KI, POS_KD, MAX_OUT, DEFAULT_MAX_INTEGRAL
+                                 DEFAULT_TARGET_START, GPIO_PIN_8 bool is_position_controller)
+ */
+
+
+MotorController MotorController(&timINIT.htim3, TIM_CHANNEL_1, GPIOB,
+                                &timINIT.htim4, GPIO_PIN_6, GPIO_PIN_7,
                                 POS_KP, POS_KI, POS_KD, MAX_OUT, DEFAULT_MAX_INTEGRAL,
-                                DEFAULT_TARGET_START, GPIO_PIN_8);
+                                DEFAULT_TARGET_START, GPIO_PIN_8, 0)
+                                ;
 
 
 // Encoder instance
