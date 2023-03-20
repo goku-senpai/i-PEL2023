@@ -18,15 +18,15 @@ DIO *LedBlue;
 UART_HandleTypeDef huart6;
 
 //instance of timers
-Timer_initialize timer_initialize;
+Timer_initialize timINIT;
 
 // USB Serial connection to the PC
 Serial pc(USART2, GPIOA, GPIO_PIN_2, GPIO_PIN_3);
 
 // Motor controller instance
-MotorController motor_controller(&timer_initialize.htim3, TIM_CHANNEL_1, GPIOB, &timer_initialize.htim4, GPIO_PIN_6, GPIO_PIN_7,
-                                 POS_KP, POS_KI, POS_KD, MAX_OUT, DEFAULT_MAX_INTEGRAL,
-                                 DEFAULT_TARGET_START, GPIO_PIN_8);
+MotorController motorController(&timINIT.htim3, TIM_CHANNEL_1, GPIOB, &timINIT.htim4, GPIO_PIN_6, GPIO_PIN_7,
+                                POS_KP, POS_KI, POS_KD, MAX_OUT, DEFAULT_MAX_INTEGRAL,
+                                DEFAULT_TARGET_START, GPIO_PIN_8);
 
 
 // Encoder instance
@@ -43,7 +43,7 @@ void delay(uint32_t ms);
 
 
 
-void parse_msg(const uint8_t* data, bool& bFreewheel, float& dKp, float& dKi, float& dKd, float& dSetpoint) {
+void parseMessage(const uint8_t* data, bool& bFreewheel, float& dKp, float& dKi, float& dKd, float& dSetpoint) {
     const char* c_data = reinterpret_cast<const char*>(data);
     LedRed->toggle();
 
@@ -96,7 +96,7 @@ void checkmsg(const uint8_t* data) {
     bool bFreewheel = true;
     float dKp = 0.0f, dKi = 0.0f, dKd = 0.0f, dSetpoint = 0.0f;
 
-    parse_msg(data,bFreewheel,dKp,dKi,dKd,dSetpoint);
+    parseMessage(data,bFreewheel,dKp,dKi,dKd,dSetpoint);
     printf("Received data: %d,%f,%f,%f,%f\n", bFreewheel, dKp, dKi,dKd, dSetpoint);
 
 }
@@ -111,25 +111,32 @@ int main() {
     printf("Starting motor controller...\n");
 
     //uint8_t test_msg[]="11.32";
-    uint8_t test_msg[]="1 1.32 10.01 100.01 10.001\n";
-    uint8_t buffer[]="\n";
-    LedBlue->toggle();
+    uint8_t uTestMessage[]="1 1.32 10.01 100.01 10.001\n";
+    uint8_t uBuffer[]="\n";
+
 
     while (1) {
 
-        checkmsg(test_msg);
+        checkmsg(uTestMessage);
         /*
          * Read Data from USB (GUI)
          *  HAL_UART_Receive(&huart6, rx_buffer,20, 300);
-         *  checkmsg(rx_buffer);
+         *
          */
 
         HAL_UART_Receive(&huart6, rx_buffer,20, 300);
         checkmsg(rx_buffer);
-        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
 
-        //LedGreen->toggle();
+        LedGreen->toggle();
         delay(250);
+
+        /*
+         * Todo: Implement Motor controller
+            if(Freewheel):motor_controller.set_speed(speed);
+
+            break;
+         *
+         */
 
     }
 }

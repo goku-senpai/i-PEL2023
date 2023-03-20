@@ -64,6 +64,8 @@
  */
 
 #define ENCODER_RESOLUTION              8384.0f //131(Übersetzung) *16 (Encoderauflösung) *4( 2*Rise and Fall flag)
+#define SPEED_KF                        100
+
 
 #define ENCODER_M1_A_PIN                GPIO_PIN_12
 #define ENCODER_M1_A_PORT               GPIOD
@@ -73,6 +75,30 @@
 #define ENCODER_M1_B_PORT               GPIOE
 
 #define ENCODER_M1_B_ALTERNATE          GPIO_AF2_TIM4
+
+
+#define PID_MODE_POSITION_CONTROL       0
+#define PID_MODE_SPEED_CONTROL          1
+/**
+ * @defgroup LED Led
+ * Car indicator defines
+ *
+ * @{
+ */
+#define LED_BLUE_PIN                  GPIO_PIN_7
+/** port of blue led */
+#define LED_BLUE_PORT                 GPIOB
+
+/** pin of red led */
+#define LED_RED_PIN                   GPIO_PIN_14
+/** port of red led */
+#define LED_RED_PORT                  GPIOB
+
+/** pin of green led */
+#define LED_GREEN_PIN                 GPIO_PIN_0
+/** port of green led */
+#define LED_GREEN_PORT                GPIOB
+/** @} */
 
 #define M_PI                            3.14159265358979323846
 #define RAD2DEG                         57.295779513082

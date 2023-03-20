@@ -11,7 +11,8 @@ public:
     MotorController(TIM_HandleTypeDef* htim_pwm, uint32_t channel_pwm, GPIO_TypeDef* gpio_dir,
                     TIM_HandleTypeDef* htim_encoder, uint32_t pin_encoder_a, uint32_t pin_encoder_b,
                     float pos_kp, float pos_ki, float pos_kd, float max_output, float max_integral,
-                    float target_start, uint32_t pin_direction);
+                    float target_start, uint32_t pin_direction, bool is_position_controller);
+
 
     void set_direction(uint8_t direction);
     void set_target(float target);
@@ -28,8 +29,9 @@ private:
     uint32_t pin_encoder_a_;
     uint32_t pin_encoder_b_;
     uint32_t pin_direction_;
-
     PIDController pid_controller_;
+
+    bool is_position_controller_;
 
     float current_position_;
     float current_output_;

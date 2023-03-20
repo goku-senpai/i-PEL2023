@@ -1,21 +1,17 @@
 #include "pid_controller.h"
+#include "constants.h"
 
 PIDController::PIDController(float kp, float ki, float kd, float max_output, float max_integral, float target)
-        : kp_(kp), ki_(ki), kd_(kd), max_output_(max_output), integral_(max_integral), target_(target) {
-     this->mode_ = PID_MODE_FREEWHEEL;
+        : kp_(kp), ki_(ki), kd_(kd), max_output_(max_output), max_integral_(max_integral), target_(target), mode_((Mode)PID_MODE_POSITION_CONTROL) {
 }
-/*
-void PIDController::set_setpoint(float setpoint) {
-    this->setpoint = setpoint;
-}
-*/
-
-
 
 void PIDController::set_target(float target) {
     this->target_ = target;
 }
 
+float PIDController::get_target() {
+    return this->target_;
+}
 
 float PIDController::compute(float input) {
     float error = this->target_ - input;
@@ -43,38 +39,30 @@ float PIDController::compute(float input) {
     return output;
 }
 
-
-
-void PIDController::update(float error, float sample_time) {
-    float derivative = (error - last_error_) / sample_time;
-    last_error_ = error;
-    integral_ += error * sample_time;
-
-    // Limit integral term to prevent windup
-    if (integral_ > max_integral_) {
-        integral_ = max_integral_;
-    } else if (integral_ < -max_integral_) {
-        integral_ = -max_integral_;
+void PIDController::update(float input, float sample_time) {
+    if (mode_ == POSITION_CONTROL) {
+        update_position_control(input, sample_time);
+    } else if (mode_ == SPEED_CONTROL) {
+        update_speed_control(input, sample_time);
     }
+}
 
-    // Calculate PID output
-    float output = kp_ * error + ki_ * integral_ + kd_ * derivative;
+void PIDController::update_position_control(float input, float sample_time) {
+    float error = this->target_ - input;
+    update(error, sample_time);
+}
 
-    // Limit output to prevent saturation
-    if (output > max_output_) {
-        output = max_output_;
-    } else if (output < -max_output_) {
-        output = -max_output_;
-    }
-
-     current_output_ = output;
+void PIDController::update_speed_control(float input, float sample_time) {
+    float error = this->target_ - input;
+    float output = compute(error);
+    float setpoint = this->target_ + output;
+    update(setpoint - input, sample_time);
 }
 
 float PIDController::get_output() {
     return current_output_;
 }
 
-
-void PIDController::set_mode(int mode) {
-
+void PIDController::set_mode(bool mode) {
+    this->mode_ = (Mode)mode;
 }

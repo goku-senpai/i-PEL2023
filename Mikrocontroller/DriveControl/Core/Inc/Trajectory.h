@@ -6,7 +6,7 @@
 #define TRAJECTORY_H
 
 #include <cmath>
-#include "define.h"
+#include "constants.h"
 #include <cstdarg>
 
 /**
