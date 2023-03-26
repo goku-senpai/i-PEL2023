@@ -46,10 +46,17 @@ float PIDController::compute(float input) {
 }
 
 void PIDController::update(float input, float sample_time) {
-    if (mode_ == POSITION_CONTROL) {
+    if (sample_time <= 0.0) {
+        return;
+    } else if (input == 0.0 && mode_ == POSITION_CONTROL) {
+        // Skip position control update when input is zero
+        return;
+    } else if (mode_ == POSITION_CONTROL) {
         update_position_control(input, sample_time);
+        return;
     } else if (mode_ == SPEED_CONTROL) {
         update_speed_control(input, sample_time);
+        return;
     }
 }
 

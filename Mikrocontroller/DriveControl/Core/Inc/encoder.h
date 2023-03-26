@@ -8,7 +8,7 @@
 class Encoder
 {
 public:
-    Encoder(TIM_TypeDef* htim, GPIO_TypeDef* port, uint16_t pin, uint32_t alternate);
+    Encoder(TIM_HandleTypeDef* htim, GPIO_TypeDef* port, uint16_t pin, uint32_t alternate);
     void init();
     int32_t get_count();
     void reset_count();

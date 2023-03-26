@@ -1,14 +1,23 @@
 #include "encoder.h"
 
-Encoder::Encoder(TIM_TypeDef* htim, GPIO_TypeDef* port, uint16_t pin, uint32_t alternate)
+Encoder::Encoder(TIM_HandleTypeDef* htim, GPIO_TypeDef* port, uint16_t pin, uint32_t alternate)
 {
-    TIM_HandleTypeDef htim_handle;
-    htim_handle.Instance = htim;
+this->_htim=htim;
+this->_port=port;
+this->_pin=pin;
+this->_alternate=alternate;
 
 }
 
 void Encoder::init()
 {
+    /**
+     * TODO: change code for appropriate encoder
+     *
+     * I2C: PB8 I2C1_SCL, PB9 I2C1_SDA
+     *
+     */
+    //set up the timer for the Encoder
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     GPIO_InitStruct.Pin = _pin;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
