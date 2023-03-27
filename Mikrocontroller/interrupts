@@ -1,0 +1,62 @@
+To work with interrupts on STM32NucleoF767ZI using HAL library, you can follow these steps:
+
+1. Enable the interrupt for the required peripheral by setting the corresponding interrupt enable bit in its NVIC (Nested Vector Interrupt Controller) register.
+
+2. Write an interrupt service routine (ISR) that will be executed when the interrupt occurs.
+
+3. In the main program, initialize the HAL library and configure the required peripheral.
+
+4. Attach the ISR to the corresponding interrupt using the HAL library function HAL_NVIC_SetPriority.
+
+5. Enable the interrupt using the HAL library function HAL_NVIC_EnableIRQ.
+
+6. Start the main program loop and wait for the interrupt to occur. When the interrupt occurs, the ISR will be called.
+
+7. In the ISR, clear the interrupt flag and perform any necessary actions.
+
+Note: The exact steps and functions may vary depending on the specific peripheral and interrupt being used.
+
+
+
+
+```c++
+#include "stm32f7xx_hal.h"
+
+/* Interrupt handlers */
+void EXTI0_IRQHandler(void)
+{
+    // Perform necessary actions
+    // Clear the interrupt flag
+    HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
+}
+
+/* Main program */
+int main()
+{
+    // Initialize the HAL library
+    HAL_Init();
+
+    // Configure the GPIO pin 0 as an input with pull-up resistor
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Pin = GPIO_PIN_0;
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    // Set up the interrupt
+    HAL_NVIC_SetPriority(EXTI0_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(EXTI0_IRQn);
+
+    // Start the main program loop
+    while (1)
+    {
+        // Wait for the interrupt to occur
+        // ISR will be called when the interrupt occurs
+    }
+}
+```
+
+In this example, we're configuring the GPIO pin PA0 as an input with a pull-up resistor and setting up an interrupt for it. When the button connected to this GPIO is pressed, the `EXTI0_IRQHandler` function will be executed. In this function, we can perform any necessary actions and clear the interrupt flag using the `HAL_GPIO_EXTI_IRQHandler` function.
+
+Note that in this example, we're using the rising edge trigger mode for the interrupt. You can change the trigger mode by modifying the `GPIO_InitStruct.Mode` parameter in the `HAL_GPIO_Init` function call.

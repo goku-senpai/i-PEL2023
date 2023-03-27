@@ -2,13 +2,11 @@
 #define ENCODER_H
 
 #include "stm32f7xx_hal.h"
-#include "constants.h"
 #include "stm32f7xx_hal_tim.h"
 
-class Encoder
-{
+class Encoder {
 public:
-    Encoder(TIM_HandleTypeDef* htim, GPIO_TypeDef* port, uint16_t pin, uint32_t alternate);
+    Encoder(TIM_HandleTypeDef* htim, GPIO_TypeDef* portA, uint16_t pinA, GPIO_TypeDef* portB, uint16_t pinB);
     void init();
     int32_t get_count();
     void reset_count();
@@ -16,9 +14,10 @@ public:
 
 private:
     TIM_HandleTypeDef* _htim;
-    GPIO_TypeDef* _port;
-    uint16_t _pin;
-    uint32_t _alternate;
+    GPIO_TypeDef* _portA;
+    uint16_t _pinA;
+    GPIO_TypeDef* _portB;
+    uint16_t _pinB;
 };
 
 #endif

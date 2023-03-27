@@ -1,30 +1,37 @@
 #include "encoder.h"
+#include "constants.h"
+#include "stm32f7xx_hal_tim.h"
 
-Encoder::Encoder(TIM_HandleTypeDef* htim, GPIO_TypeDef* port, uint16_t pin, uint32_t alternate)
+
+Encoder::Encoder(TIM_HandleTypeDef* htim, GPIO_TypeDef* portA, uint16_t pinA, GPIO_TypeDef* portB, uint16_t pinB)
 {
-this->_htim=htim;
-this->_port=port;
-this->_pin=pin;
-this->_alternate=alternate;
-
+    this->_htim = htim;
+    this->_portA = portA;
+    this->_pinA = pinA;
+    this->_portB = portB;
+    this->_pinB = pinB;
 }
 
 void Encoder::init()
 {
-    /**
-     * TODO: change code for appropriate encoder
-     *
-     * I2C: PB8 I2C1_SCL, PB9 I2C1_SDA
-     *
-     */
-    //set up the timer for the Encoder
+    // Set up the timer for the Encoder
     GPIO_InitTypeDef GPIO_InitStruct = {0};
-    GPIO_InitStruct.Pin = _pin;
+
+    // Configure Pin A
+    GPIO_InitStruct.Pin = _pinA;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-    GPIO_InitStruct.Alternate = _alternate;
-    HAL_GPIO_Init(_port, &GPIO_InitStruct);
+    GPIO_InitStruct.Alternate = ENCODER_M1_A_ALTERNATE;
+    HAL_GPIO_Init(_portA, &GPIO_InitStruct);
+
+    // Configure Pin B
+    GPIO_InitStruct.Pin = _pinB;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_InitStruct.Alternate = ENCODER_M1_B_ALTERNATE;
+    HAL_GPIO_Init(_portB, &GPIO_InitStruct);
 
     HAL_TIM_Encoder_Start(_htim, TIM_CHANNEL_ALL);
 }
